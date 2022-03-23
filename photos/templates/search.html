@@ -1,0 +1,75 @@
+<div class="" style="font-size: 20px; font-family: 'Itim', cursive;">
+    {%extends 'base.html'%}
+    {% block content %}
+    <div class="container-fluid">
+
+
+        <div class="">
+            <div class="jumbotron jumbotron-fluid mt-3">
+                {% if photos%}
+                <div class="container">
+                    <h1 class="text-center"> Found {{ photos|length }} of searched term {{message}}</h1>
+                    {%else%}
+                    <h2 class="lead"> Found 0 picture category for the search term {{message}}</h2>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+
+
+        <div class="row">
+            {%if photos%}
+            {%for photo in photos%}
+            <div class="col-md-3 mb-3">
+
+                <!--Card-->
+                <div class="card">
+
+                    <!--Card image-->
+                    <div class="view overlay">
+                        <a data-toggle="modal" data-target="#photoId{{photo.id}}">
+                            <img src="{{photo.image.url}}" class="card-img-top img-responsive styled" alt=" image"
+                                width="100" height="200">
+                        </a>
+                    </div>
+                </div>
+                <!--/.Card-->
+
+                <!-- Modal -->
+                <div class="modal fade" id="photoId{{photo.id}}" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog .modal-dialog-scrollable" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">{{photo.imageName}}</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="{{photo.image.url}}" class="img-fluid" alt="image">
+                            </div>
+                            <div class="modal-footer">
+                                <div class="row">
+                                    <div class="col-sm">Description: {{photo.imageDescription}}</div>
+                                    <div class="col-sm">Location: {{photo.imageLocation}}</div>
+                                </div>
+                                <input class="form-control input-lg" type="text"
+                                value="{{photo.image.url}}" id="{{image.id}}.url">
+                                <button type="button" class="btn btn-secondary" onclick="copy('{{image.id}}.url')">Copy Link</button>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            {%endfor%}
+            {%endif%}
+
+        </div>
+
+    </div>
+
+</div>
+{% endblock %}
