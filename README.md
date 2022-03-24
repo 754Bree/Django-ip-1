@@ -3,7 +3,7 @@
 [Briana Odhiambo](https://github.com/bree)
 
 ## Live Link
-* [here] (**)
+* [here] (https://galllerrrry7.herokuapp.com/)
 
 ## Description
  My Gallery is an application developed using Django to display my photos. Other people can also see the photos when they visit the site, and the user can click on the image to view the details of an image.
