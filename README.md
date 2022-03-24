@@ -1,6 +1,6 @@
 # My Gallery
 ## Author
-[bree](https://github.com/bree)
+[Bri](https://github.com/bree)
 
 ## Live Link
 * [here] (**)
