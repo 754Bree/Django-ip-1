@@ -1,6 +1,6 @@
 # My Gallery
 ## Author
-[Bri](https://github.com/bree)
+[Briana Odhiambo](https://github.com/bree)
 
 ## Live Link
 * [here] (**)
