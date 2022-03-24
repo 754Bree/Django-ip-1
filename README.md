@@ -26,7 +26,7 @@
 
 * Open Terminal {Ctrl+Alt+T}
 
-* git clone ```**```
+* git clone ```https://github.com/754Bree/Django-ip-1.git```
 
 * Create and activate the virtual environment
     ```python3.8 -m virtualenv virtual```
