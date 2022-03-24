@@ -73,7 +73,7 @@ Create a .env file and paste paste the following filling where appropriate:
 
 ## Contact Information 
 
-If you have any question or contributions, please email me at [briana@gmail.com]
+If you have any question or contributions, please email me at [brianaodhiambo754@gmail.com]
 
 ## License
 * [[License: MIT]](LICENCE.md)
