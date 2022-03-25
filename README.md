@@ -77,4 +77,4 @@ If you have any question or contributions, please email me at [brianaodhiambo754
 
 ## License
 * [[License: MIT]](LICENCE.md)
-* Copyright (c) 2022 **Brianna **
+* Copyright (c) 2022 **Briana **
